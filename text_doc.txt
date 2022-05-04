@@ -201,5 +201,3 @@ if else оператор нужен на случай если книга уже
 
 6. Кнопка Close
 b6 = Button(window, text='Close', width=12, command=window.destroy)
-
-

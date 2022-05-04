@@ -6,7 +6,9 @@ import backend
 def get_selected_row(event):
     try:
         global selected_tuple
+        global row_index
         index=list1.curselection()[0]
+        row_index=list1.curselection()[0]
         selected_tuple=list1.get(index)
         e1.delete(0,END)
         e1.insert(END,selected_tuple[1])
@@ -56,6 +58,12 @@ def update_command():
         list1.insert(END,"ERROR! :: Book Already Exists")
     else:
         backend.update(selected_tuple[0], title_text.get(), author_text.get(), year_text.get(), isbn_text.get())
+        list1.delete(row_index)
+        list1.insert(row_index, (selected_tuple[0], title_text.get(), author_text.get(), year_text.get(), isbn_text.get()))
+        e1.delete(0, END)
+        e2.delete(0, END)
+        e3.delete(0, END)
+        e4.delete(0, END)
 
 def exists_command(): 
     return backend.exists(title_text.get(),author_text.get(),year_text.get(),isbn_text.get())
