@@ -139,7 +139,7 @@ def add_command():
     list1.insert(END, (title_text.get(), author_text.get(), year_text.get(), isbn_text.get()))
 
 
-4. Кнопка delete selected
+4. Кнопка Delete selected
 
 Функция delete принимает id в качестве аргумента и удаляет строку с соответсвующим id из базы данных.
 Соответсвенно, когда пользователь выбирает одну из строк в списке Listbox, мы должны получить id выбранной
