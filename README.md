@@ -18,7 +18,7 @@ ___
 
 <a id="screenshot"></a>
 ### Программа в действии
-![IMG_1845](https://user-images.githubusercontent.com/97599612/166640640-5213852a-886b-4a1e-b014-783de580740f.JPG)
+<img width="605" alt="BookStore" src="https://user-images.githubusercontent.com/97599612/168240654-4de7e6d6-f1ac-407f-9ef1-7884c728d59f.png">
 
 * Кнопка __View all__ - выводит все записи в окно.
 * Кнопка __Search entry__ - производит поиск по любому из 4-х параметров и выводит результат в окно.
